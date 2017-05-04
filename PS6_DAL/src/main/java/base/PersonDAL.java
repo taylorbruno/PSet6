@@ -17,7 +17,6 @@ public class PersonDAL {
 	public static PersonDomainModel addPerson(PersonDomainModel per) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction tx = null;
-//
 		try {
 			tx = session.beginTransaction();
 			session.save(per);
