@@ -70,7 +70,6 @@ public class Person_Test {
 		PersonDAL.addPerson(p2);
 		assertTrue(PersonDAL.getPersons().contains(p2));
 	}
-
 	@Test
 	public void TestGetPersons() {
 		ArrayList<PersonDomainModel> Plist = PersonDAL.getPersons();
