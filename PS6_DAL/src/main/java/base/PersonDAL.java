@@ -111,7 +111,6 @@ public class PersonDAL {
 			session.close();
 		}
 	}
-
 	public static PersonDomainModel updatePerson(PersonDomainModel per) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction tx = null;
