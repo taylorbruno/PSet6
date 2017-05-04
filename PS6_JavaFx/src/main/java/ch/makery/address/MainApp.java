@@ -47,9 +47,7 @@ public class MainApp extends Application {
     public MainApp() {
         // Add some sample data
     	
-    	//TODO: ArrayList<PersonDomainModel> people should call getPersons() in PersonDAL
-    	ArrayList<PersonDomainModel> people = PersonDAL.getPersons();
-    	
+    	ArrayList<PersonDomainModel> people = PersonDAL.getPersons();    	
     	
     	
     	for (PersonDomainModel p: people)
@@ -232,8 +230,6 @@ public class MainApp extends Application {
             primaryStage.setTitle("AddressApp - " + file.getName());
         } else {
             prefs.remove("filePath");
-
-            // Update the stage title.
             primaryStage.setTitle("AddressApp");
         }
     }
